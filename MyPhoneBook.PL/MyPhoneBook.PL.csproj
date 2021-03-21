@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68E81AE7-38A7-467F-A688-5EDD2C406064}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyPhoneBook.PL</RootNamespace>
+    <AssemblyName>MyPhoneBook.PL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeRush.Common, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Interop, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.VSCore, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Localization, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\fviewConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewConnect.Designer.cs">
+      <DependentUpon>fviewConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fviewContactProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewContactProperty.Designer.cs">
+      <DependentUpon>fviewContactProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fviewEditContactType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewEditContactType.Designer.cs">
+      <DependentUpon>fviewEditContactType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fviewPhoneBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewPhoneBook.Designer.cs">
+      <DependentUpon>fviewPhoneBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fviewSearchContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewSearchContact.Designer.cs">
+      <DependentUpon>fviewSearchContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fviewUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fviewUserProfile.Designer.cs">
+      <DependentUpon>fviewUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\fviewConnect.resx">
+      <DependentUpon>fviewConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fviewContactProperty.resx">
+      <DependentUpon>fviewContactProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fviewEditContactType.resx">
+      <DependentUpon>fviewEditContactType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fviewPhoneBook.resx">
+      <DependentUpon>fviewPhoneBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fviewSearchContact.resx">
+      <DependentUpon>fviewSearchContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fviewUserProfile.resx">
+      <DependentUpon>fviewUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIn001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIn003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIn0031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogIn0032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mobileme_login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1600flowers_1008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ph_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phAdded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phAddNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phDelete01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact Details.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactDetails1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactList.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactListPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactList1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\favoriteEmail.png" />
+    <Content Include="Resources\letterA1.png" />
+    <Content Include="Resources\letterAZ.png" />
+    <Content Include="Resources\letterB1.png" />
+    <Content Include="Resources\letterC.png" />
+    <Content Include="Resources\letterD.png" />
+    <Content Include="Resources\letterE.png" />
+    <Content Include="Resources\letterF.png" />
+    <Content Include="Resources\letterG.png" />
+    <Content Include="Resources\letterH.png" />
+    <Content Include="Resources\letterI1.png" />
+    <Content Include="Resources\letterJ.png" />
+    <Content Include="Resources\letterK.png" />
+    <Content Include="Resources\letterL.png" />
+    <Content Include="Resources\letterM.png" />
+    <Content Include="Resources\letterN.png" />
+    <Content Include="Resources\letterO.png" />
+    <Content Include="Resources\letterP.png" />
+    <Content Include="Resources\letterQ.png" />
+    <Content Include="Resources\letterR.png" />
+    <Content Include="Resources\letterS.png" />
+    <Content Include="Resources\letterT.png" />
+    <Content Include="Resources\letterU.png" />
+    <Content Include="Resources\letterV.png" />
+    <Content Include="Resources\letterW.png" />
+    <Content Include="Resources\letterX.png" />
+    <Content Include="Resources\letterY.png" />
+    <Content Include="Resources\letterZ.png" />
+    <Content Include="Resources\Ph-favorite2.png" />
+    <Content Include="Resources\Ph-print2.png" />
+    <Content Include="Resources\Ph-print4.png" />
+    <Content Include="Resources\Ph-printPreview.png" />
+    <Content Include="Resources\Ph-PrintPreview2.png" />
+    <Content Include="Resources\Ph-property.png" />
+    <Content Include="Resources\Ph-report.png" />
+    <Content Include="Resources\Ph-Search.png" />
+    <Content Include="Resources\phCategory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
